@@ -15,6 +15,11 @@ namespace Nucleus
         {
             _graphics = new GraphicsDeviceManager(this);
             Content.RootDirectory = "Content";
+
+#if ANDROID
+            // Force game orientation
+            _graphics.SupportedOrientations = DisplayOrientation.Portrait;
+#endif
         }
 
         protected override void Initialize()

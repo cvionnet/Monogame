@@ -5,7 +5,9 @@
 
 ## Synopsis
 
-Code template for Monogame
+Crossplateform code template for Monogame :
+- Desktop (OpenGL)
+- Android
 
 
 ### What's inside

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>6efba8a9-a407-4029-bdd0-651d22a87386</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>Nucleus</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Game\Actors\Meteor.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game\Actors\Player.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game\Scenes\Scene_Gameover.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game\Scenes\Scene_Gameplay.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Game\Scenes\Scene_Menu.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainGame.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Nucleus\Graphics\ISpriteManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Nucleus\Graphics\N_Sprite.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Nucleus\Graphics\N_SpriteAnimation.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Nucleus\Graphics\N_SpriteManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Nucleus\Graphics\N_Tiles_TMX.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Nucleus\N_AssetManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Nucleus\N_GameState.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Nucleus\N_Inputs.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Nucleus\N_MusicManager.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Nucleus\N_Scene.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Nucleus\UI\N_Button.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Nucleus\Utils\Fps_counter.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Nucleus\Utils\N_Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="$(MSBuildThisFileDirectory)Content\Content.mgcb" />
+    <None Include="$(MSBuildThisFileDirectory)Content\Content.mgcb" />
+    <None Include="$(MSBuildThisFileDirectory)Content\File.spritefont" />
+    <None Include="$(MSBuildThisFileDirectory)Content\_Tiled\map.tmx" />
+    <None Include="$(MSBuildThisFileDirectory)Content\_Tiled\map.tsx" />
+    <None Include="$(MSBuildThisFileDirectory)Content\_Tiled\monogame.extended.content.pipeline\3.8.0\tools\MonoGame.Extended.Content.Pipeline.dll" />
+    <None Include="$(MSBuildThisFileDirectory)Content\_Tiled\monogame.extended.content.pipeline\3.8.0\tools\MonoGame.Extended.dll" />
+    <None Include="$(MSBuildThisFileDirectory)Content\_Tiled\monogame.extended.content.pipeline\3.8.0\tools\MonoGame.Extended.Graphics.dll" />
+    <None Include="$(MSBuildThisFileDirectory)Content\_Tiled\monogame.extended.content.pipeline\3.8.0\tools\MonoGame.Extended.Tiled.dll" />
+    <None Include="$(MSBuildThisFileDirectory)Content\_Tiled\monogame.extended.content.pipeline\3.8.0\tools\Newtonsoft.Json.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="$(MSBuildThisFileDirectory)Content\PixelMaster.ttf" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\_Images\button.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\_Images\herosheet.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\_Images\meteor.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\_Images\ship.png" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\_Musics\cool.mp3" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\_Musics\techno.mp3" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\_Sounds\explode.wav" />
+    <Content Include="$(MSBuildThisFileDirectory)Content\_Tiled\tileset.png" />
+  </ItemGroup>
+</Project>
